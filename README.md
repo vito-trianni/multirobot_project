@@ -14,9 +14,4 @@ The xml file provides the basic configuration options for the arena and the agen
 Everything can be configured by overloading the base classes.
 The xml file can also be used to switch off the GUI, by commenting the respective line.
 
-For this code, run from: /home/ccapontep/Documents/1_AIRO/Y2S2/Elective_Robotics/Multi-Robot/collective_decision_making_in_dynamical_environments
-as: 
-python2 run_pysage -c config/myconfig.xml
-
-
 
