@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<configuration>
+    <gui pkg="randomwalk" delay="1" pixels_per_meter="450" />
+    <arena
+        pkg="randomwalk"
+        timestep_length="0.1"
+        exploitation_rate = "0.0005"
+        integration_step = "0.001"
+        size="1,1"
+        size_radius= "0.5"
+        max_steps="50000"
+        num_agents="50"
+        num_runs="20"
+        correlation="True"
+        spatial_correlation="0.9"
+        correlation_time="0.01"
+        results="results_sp/corr0.0_levy2.0_std025"
+        >
+      <target num_elements="10" value="0.1" size="0.1" color="green" />
+      <!--target num_elements="5" value="0.1" size="0.1" color="red" /-->
+      <agent pkg="randomwalk"
+             size="0.033"
+             linear_speed="0.01"
+             CRW_exponent="0.0"
+             std_motion_steps="2.5"
+             levy_exponent="2.0"
+             interaction_range="0.1" />
+   	</arena>
+</configuration>
